@@ -33,16 +33,16 @@ jobs:
         run: brew install-bundler-gems
 
       - name: Trust tap
-        run: brew trust ${{ steps.set-up-homebrew.outputs.tap-name }}
+        run: brew trust crazygiscool/gset
 
       - name: brew style
-        run: brew style ${{ steps.set-up-homebrew.outputs.tap-name }}
+        run: brew style crazygiscool/gset
 
       - name: brew audit
-        run: brew audit --strict ${{ steps.set-up-homebrew.outputs.tap-name }}/gset
+        run: brew audit --strict crazygiscool/gset/gset
 
       - name: brew install from source
-        run: brew install --build-from-source ${{ steps.set-up-homebrew.outputs.tap-name }}/gset
+        run: brew install --build-from-source crazygiscool/gset/gset
 
       - name: brew test
-        run: brew test ${{ steps.set-up-homebrew.outputs.tap-name }}/gset
+        run: brew test crazygiscool/gset/gset
