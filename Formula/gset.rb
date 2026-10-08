@@ -3,7 +3,7 @@ class Gset < Formula
   homepage "https://github.com/Crazygiscool/GSETLang"
   url "https://github.com/Crazygiscool/GSETLang/archive/refs/tags/v3.2.1.tar.gz"
   sha256 "422387a4d4d7773f4aa8a1848d1e804407b1eac15c98586562c66b9417e2fa7e"
-  license "MIT OR Apache-2.0"
+  license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/Crazygiscool/GSETLang.git", branch: "main"
 
   livecheck do
