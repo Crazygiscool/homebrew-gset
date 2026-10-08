@@ -32,6 +32,9 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: brew install-bundler-gems
 
+      - name: Trust tap
+        run: brew trust ${{ steps.set-up-homebrew.outputs.tap-name }}
+
       - name: brew style
         run: brew style ${{ steps.set-up-homebrew.outputs.tap-name }}
 
