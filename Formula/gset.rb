@@ -1,8 +1,8 @@
 class Gset < Formula
   desc "Transpile any language syntax to any target language"
   homepage "https://github.com/Crazygiscool/GSETLang"
-  url "https://github.com/Crazygiscool/GSETLang/archive/refs/tags/v3.2.1.tar.gz"
-  sha256 "422387a4d4d7773f4aa8a1848d1e804407b1eac15c98586562c66b9417e2fa7e"
+  url "https://github.com/Crazygiscool/GSETLang/archive/refs/tags/v3.3.0.tar.gz"
+  sha256 "ae963048193d47b86ab8ab31cf1b8d3ca86f5a21b3727ad50623594000c291b0"
   license any_of: ["MIT", "Apache-2.0"]
   head "https://github.com/Crazygiscool/GSETLang.git", branch: "main"
 
